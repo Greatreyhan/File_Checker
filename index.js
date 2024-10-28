@@ -7,7 +7,7 @@ const PDFImage = require('pdf-image').PDFImage;
 const { Jimp, intToRGBA } = require('jimp');
 
 const app = express();
-const upload = multer({ dest: 'uploads/' }); 
+const upload = multer({ dest: 'tmp/' }); 
 
 async function classifyAndCalculateCost(pdfPath) {
     let totalCost = 0;
